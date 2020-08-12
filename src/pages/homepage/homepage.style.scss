@@ -1,0 +1,39 @@
+.home__container {
+  display: grid;
+  grid-template-rows: 4rem 80vh 20rem 20rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  .home {
+    background-color: #fff;
+    grid-column: 1 / span 2;
+    display: grid;
+    align-items: flex-end;
+  }
+  .banner {
+    grid-column: 1 / span 2;
+
+    display: grid;
+    grid-template-rows: 1fr repeat(2, min-content);
+
+    figure {
+      background-size: cover;
+      background-position: center;
+    }
+
+    .image {
+    }
+
+    .title {
+      font-weight: bold;
+    }
+
+    .date {
+    }
+  }
+  .box__1 {
+    background-color: red;
+  }
+  .box__2 {
+    background-color: peru;
+  }
+}
